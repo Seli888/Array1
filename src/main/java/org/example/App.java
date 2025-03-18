@@ -24,7 +24,7 @@ public class App {
                 } else {
                     secondList.add(someNumbers.get(i));
                 } if (someNumbers.get(i) == 0) {
-                    System.out.println("Элемент списка номер: " + i + " равен 0" );
+                    System.out.println("Элемент списка номер: " + i + " равен 0!" );
                 }
             }
         System.out.println(firstList);
