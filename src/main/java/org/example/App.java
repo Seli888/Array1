@@ -1,21 +1,33 @@
 package org.example;
-import lombok.Data;
+
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
 
-@Data
+
 public class App {
+    public static void main(String[] args) {
+        ArrayList <Integer> someNumbers = new ArrayList<Integer>();
+        someNumbers.add(1);
+        someNumbers.add(-2);
+        someNumbers.add(-3);
+        someNumbers.add(5);
+        ArrayList <Integer> firstList = new ArrayList<>();
+        ArrayList <Integer> secondList = new ArrayList<>();
 
-    public static void main( String[] args ) {
-        ArrayList<Person> persona = new ArrayList<>();
-        persona.add(new Person("Kolya", 15));
-        persona.add(new Person("Vanya", 17));
-        persona.add(new Person("Dima", 12));
-        persona.add(new Person("Andrey", 10));
 
-        Collections.sort(persona);
-        System.out.println(persona);
+            for (int i = 0; i < someNumbers.size(); i++){
+                if (someNumbers.get(i) <= 0) {
+                    firstList.add(someNumbers.get(i));
+                } else {
+                    secondList.add(someNumbers.get(i));
+                }
+            }
+        System.out.println(firstList);
+        System.out.println(secondList);
     }
+
+
+
 }
